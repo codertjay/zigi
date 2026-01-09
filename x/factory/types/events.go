@@ -1,0 +1,35 @@
+package types
+
+const (
+	EventDenomCreated           = "denom_created"
+	EventDenomMintedAndSent     = "denom_minted_and_sent"
+	EventDenomBurned            = "denom_burned"
+	EventDenomMintingCapChanged = "denom_minting_cap_changed"
+	EventDenomURIUpdated        = "denom_uri_updated"
+	EventDenomMetadataUpdated   = "denom_metadata_updated"
+	EventDenomAuthUpdated       = "denom_auth_updated"
+	EventDenomAuthProposed      = "denom_auth_proposed"
+	EventDenomAuthClaimed       = "denom_auth_claimed"
+	EventDenomAuthDisabled      = "denom_auth_disabled"
+	EventTypeWithdrawModuleFees = "withdraw_module_fees"
+
+	AttributeValueCategory          = ModuleName
+	AttributeKeySigner              = "signer"
+	AttributeKeyDenom               = "denom"
+	AttributeKeyMintingCap          = "minting_cap"
+	AttributeKeyCanChangeMintingCap = "can_change_minting_cap"
+	AttributeKeyCreator             = "creator"
+	AttributeKeyDenomMintedAndSent  = "denom_minted_and_sent"
+	AttributeKeyRecipient           = "recipient"
+	AttributeKeyTotalMinted         = "total_minted"
+	AttributeKeyTotalSupply         = "total_supply"
+	AttributeKeyDenomMetadata       = "denom_metadata"
+	AttributeKeyDenomURI            = "denom_uri"
+	AttributeKeyDenomURIHash        = "denom_uri_hash"
+	AttributeKeyAmount              = "amount"
+	AttributeKeyBankAdmin           = "bank_admin"
+	AttributeKeyMetadataAdmin       = "metadata_admin"
+	AttributeKeyModule              = "module"
+	AttributeKeyReceiver            = "receiver"
+	AttributeKeyFee                 = "fee"
+)

@@ -1,0 +1,79 @@
+version: 1
+accounts:
+- name: z
+  mnemonic: front alter gentle idle wrestle arctic math universe comfort lamp profit universe change wing defense pilot ladder image ramp print tumble aspect liar stock
+  coins:
+  - 200000000000000000000uzig
+  - 200000000000000000000bas
+  - 200000000000000000000quo
+  - 200000000000000000000szig
+- name: faucet
+  mnemonic: please risk tone april produce obvious wash merry spread cabin shaft person reopen feel mean latin bring spatial ship father orient alter drift height
+  coins:
+    - 10000000000000000000000000uzig
+    - 10000000000000szig
+- name: zuser1
+  mnemonic: olympic student ramp number lamp pig good need discover screen rose tail foil slogan vocal oxygen obscure maple learn arrow siege joke clap accuse
+  coins:
+  - 10000000000000000uzig
+  - 100000000szig
+- name: zuser2
+  mnemonic: bless pepper april hat yard plastic success price cart swamp human fish escape learn someone current sad trust negative winter reopen decorate jungle clog
+  coins:
+    - 10000000000000000uzig
+    - 100000000szig
+- name: zuser3
+  mnemonic: master alarm blue zone merge afford spy match fiber elite choice buffalo uncle slim dirt scrub faith garage inner anger evolve almost caught column
+  coins:
+    - 10000000000000000uzig
+    - 100000000szig
+- name: zuser4
+  mnemonic: build undo silver tray latin exclude found ramp between yellow race meat banana brave armed energy typical regret ensure struggle melt attend own age
+  coins:
+    - 10000000000000000uzig
+    - 100000000szig
+- name: zuser5
+  mnemonic: cannon trade gravity bike gap dance jaguar monkey enemy neglect trumpet turn piece assume program feed float thrive nominee morning cool menu ability menu
+  coins:
+    - 10000000000000000uzig
+    - 100000000szig
+- name: nk
+  mnemonic: ceiling social enlist sure action sunset easy loyal short plate hub rack zone apart youth version dragon weird process frame submit sunny coyote day
+  coins:
+    - 10000000000000000uzig
+    - 100000000szig
+
+client:
+  openapi:
+    path: docs/static/openapi.yml
+  composables:
+    path: "vue/src/composables"
+  hooks:
+    path: "react/src/hooks"
+
+faucet:
+  name: faucet
+  coins:
+  - 500uzig
+  - 1000foo
+  - 100000szig
+  coins_max:
+  - 20000uzig
+  - 100000foo
+#  rate_limit_window: 604800
+validators:
+- name: z
+  bonded: 200000000000000000000szig
+  app:
+    minimum-gas-prices: "0.025szig"
+  config:
+    consensus:
+      timeout_commit: "7s"
+      timeout_propose: "7s"
+  client:
+    output: "json"
+genesis:
+  app_state:
+    staking:
+      params:
+        bond_denom: "szig"
